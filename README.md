@@ -2,6 +2,12 @@
 
 Linux Server Configuration project files for the Udacity Fullstack Nanodegree.
 
+IP Address: 18.188.115.41
+
+Port: 2200
+
+URL: [http://ec2-18-188-115-41.us-east-2.compute.amazonaws.com](http://ec2-18-188-115-41.us-east-2.compute.amazonaws.com)
+
 ### Create Ubuntu VM Instance
 
 * Create an Amazon Lightsail instance using the OS Only + Ubuntu option.
