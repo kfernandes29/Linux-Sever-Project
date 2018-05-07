@@ -418,3 +418,7 @@ python3 catalog/database_seed.py
 ```
 deactivate
 ```
+
+# Credits
+
+[https://www.linode.com/docs/development/python/create-a-python-virtualenv-on-ubuntu-1610/](https://www.linode.com/docs/development/python/create-a-python-virtualenv-on-ubuntu-1610/)
