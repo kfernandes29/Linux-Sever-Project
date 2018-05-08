@@ -8,6 +8,17 @@ Port: 2200
 
 URL: [http://ec2-18-188-115-41.us-east-2.compute.amazonaws.com](http://ec2-18-188-115-41.us-east-2.compute.amazonaws.com)
 
+## Installed Packages
+
+* [Python 3](https://www.python.org/download/releases/3.0/)
+* [VirtualEnv](https://virtualenv.pypa.io/en/stable/)
+* [PostgreSQL](https://www.postgresql.org)
+* [Apache2](https://httpd.apache.org)
+* [Apache2 WSGI Mod](https://github.com/GrahamDumpleton/mod_wsgi)
+* [Git](https://git-scm.com)
+
+## Steps To Complete This Configuration
+
 ### Create Ubuntu VM Instance
 
 * Create an Amazon Lightsail instance using the OS Only + Ubuntu option.
@@ -146,6 +157,7 @@ sudo service ssh restart
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 sudo ufw allow www
+sudo ufw allow ntp
 sudo ufw allow 2200/tcp
 sudo ufw deny 22
 sudo ufw enable
@@ -169,9 +181,11 @@ exit
 
 * Select Add Another
 
-* From the dropdown, select Custom TCP and enter 2200
+* From the dropdown, select Custom TCP and enter 2200 for our new SSH port
 
-* Save
+* From the dropdown, select Custom TCP and enter 123 for our NTP port
+
+* Save the changes
 
 * SSH into your newly created and configured `grader` user on port 2200:
 
